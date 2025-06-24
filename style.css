@@ -1,301 +1,225 @@
+/* ==== Google fonts link ====  */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-
-/* common code starts here  */
-
-* 
-{
+/* ===-= reset section here ===-=  */
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 0;
-    list-style-type: none;
     text-decoration: none;
-    scroll-behavior: smooth;
+    list-style-type: none;
     text-transform: capitalize;
-    font-family:"Poppins", sans-serif;
 }
 
-body 
-{
-    min-height: 100vh; 
-    background: linear-gradient(  #B8E7FA, #E6E6FA );
-    padding-top: 102px;
-}
-
- /* img{
+html , body {
     width: 100%;
-    height: auto;
-    object-fit: contain;
-}  */
-
-.btn 
-{
-    padding: 17px 24px;
-    border-radius: 10px;
-    font-weight: 3px;
-    background:linear-gradient(#FFA500,#FFD447); 
-    border: none;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    
+    height: 100%;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(#B8E7FA , #B8E7FA);
 }
 
+span {
+    color: #FFA500;
+    text-transform: none;
+}
 
-.btn-extra{
+.btn {
     width: 12rem;
+    padding: 17px 24px ;
+    border-radius: 10px;
+    background: linear-gradient(#FFA500,#FFD447);
+    color: black;
+    font-size: .8rem;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
 }
 
+/* ==== Header section starts here =====  */
 
-
-
-/* common code ends here  */
-
-
-
-.header-section
-{
-    width: 100%;    
-    background-color: #ffffff;
+.nav-bar {
+    width: 100%;
+    height: 100px;
+    padding: 1.5rem;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     z-index: 100;
 }
 
-.nav-section
-{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 24px 0;
-    margin: auto;
-    
+.nav-bar h1 {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
-.logo-area h2 
-{
-    font-weight: bold;
-    font-size: 28px;
-}
+/* ===-= banner section starts here ===-=  */
 
-.logo-area h2 span 
-{
-    text-transform:lowercase ;
-    color:#FFA500 ;
-}
-
-
-/* Banner section start here  */ 
-
-.banner-section 
-{
-    width:87.5%;   
-    margin: 100px auto;
-    background: #E6EDF9;
-    border-radius: 16px;
-   
-}
-
-.banner-section .banner-body 
-{
-    padding: 40px 60px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 32px;
-}
-
-.banner-content 
-{
-    text-align: center;
-    width: 90.4%;
-}
-
-.banner-content h2 {
-
-    font-weight: bold;
-    font-size: 48px;
-    margin-bottom:24px;   
-}
-
-.banner-content p 
-{
-    width: 60%;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    color: #0D1321 ;
-    margin: auto;   
-}
-
-
-/* blog-section starts here  */
-
-.blog-section 
-{
-    width:87.5%;   
-    margin: 100px auto;
-    display: flex;
-    flex-direction: column;   
-    gap: 48px;     
-}
-
-.blog-section .blog-title
-{
-    text-align: center;
-}
-
-.blog-title h1 
-{
-    font-weight: bold;
-    font-size: 32px;
-    margin-bottom: 24px;
-
-}
-
-.blog-title p 
-{
-    font-size:16px;
-    line-height: 26px;
-    color:#0D1321;
-    width: 60%;
-    margin: auto;
-}
-
-.blog-section .blog-body
-{
-    background-color:#E6EDF9 ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 48px 48px;
-    border-radius: 16px;
-}
-
-.blog-content h2 
-{
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 16px;
-    color: #0D1321;
-}
-
-.blog-content p 
-{
-    font-size: 16px;
-    color: #0D1321;
-    line-height: 1.5;
-    margin-bottom: 32px;
-}
-
-/* target section starts here  */
-
-.target-section
-{
+.banner {
     width: 87.5%;
+    margin: 200px auto 0;
+    background-color: #eee;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.banner-content {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.banner-content h1 {
+    font-size: 2rem;
+    color:#0D1321;
+}
+
+.banner-content p {
+    font-size: .9rem;
+    max-width: 40%;
+    text-align: center; 
+    color:#0D1321;
+    opacity: .5;
+}
+
+/* ===-= Hero section starts here ===-=  */
+
+.hero {
+    width: 87.5%;
     margin: 100px auto;
 }
 
-.target-title
-{
-    text-align: center;
-}
-
-.target-title h1 
-{
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 24px;
-}
-
-.target-title p 
-{
-    color: #0D1321;
-    font-size: 16px;
-}
-
-.target-body
-{
+.hero-container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
- 
-    
+    gap: 1rem;
 }
 
-.target-card
-{
-     width: 364px;
-     height: 244px; 
-     background: linear-gradient( #B8E7FA, #E6E6FA );
-     border-radius: 16px; 
-     box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.25);   
-     
+.hero-container > h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #0D1321;
 }
 
-.card-content
-{
-    padding: 40px;
-          
+.hero-container > p {
+    width: 40%;
+    text-align: center;
+    font-size: .9rem;
+    color:#0D1321;
+    opacity: .5;
 }
 
-.card-content img ,h3 , a
+/* == hero body == */
 
-{
-    margin-bottom: 24px;
-}
-
-/* footer sectioon starts here  */
-
-
-.footer-section 
-{
-    background: white;
-    
-}
-
-.footer-body
-{
+.hero-body {
+    width: 100%;
+    background-color: #eee;
     display: flex;
     justify-content: space-between;
-    padding: 32px 150px ;
+    align-items: center;
+    padding: 2rem;
+    margin: 3rem auto;
+    border-radius: 1rem;
 }
 
-.footer-title h2 
-{
-    font-weight:bold;
-    font-size: 20px;
-    color: #0D1321 ;
+.body-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.footer-icon div
-{
-    margin-right:24px;
-    font-size:25px;
+.body-content > h1 {
+    font-size: 2rem;
+    opacity: .8;
+    color: #0D1321;
 }
 
-.fa-facebook 
-{
-    color:#006AFF 
+.body-content > p {
+    font-size: .9rem;
+    color:#0D1321;
+    opacity: .5;
 }
 
-.fa-github 
-{
-    color:#000000 ;
+/* ====-= target section starts here ===-= */
+
+.target {
+    width: 87.5%;
+    margin: 100px auto;
 }
 
-.fa-instagram 
-{
-    color:#E1306C ;
+.target-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+.target-container h1 {
+    text-align: center;
+}
+.target-container p {
+    text-align: center;
+    font-size: .9rem;
+}
+ /* == target card ==  */
+
+.target-card {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-self: stretch;
+    margin-top: 2rem;
 }
 
+.card {
+    width: 100%;
+    max-width: 20%;
+    background: linear-gradient(#E6EDF9 , #9DE5FF);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.25);  
+}
+.card a {
+    color: black;
+}
 
+/* ===-= footer section starts here ==-=  */
 
+.footer {
+    width: 100%;
+    background-color: #eee;
+    padding: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.footer-container h1 {
+    font-size: 1.5rem;
+    color: #0D1321;
+    opacity: .8;
+}
+
+.footer-container .icon {
+    display: flex;
+    gap : 1rem;
+    font-size: 1.5rem;
+    opacity: .7;
+}
+
+    /* ========= Thanks For Visiting My Code ========= */
