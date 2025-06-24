@@ -1,0 +1,110 @@
+
+
+@media only screen and (max-width:768px) {
+
+/* ==-== Nav & Btn ==-==  */
+
+.nav-bar {
+    padding: .5rem; 
+}
+
+.nav-bar h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.btn {
+    width: 8rem;
+    padding: 10px 10px ;
+    border-radius: 10px;
+    font-size: .7rem; 
+}
+
+/* ==-== banner section ==-==  */
+
+.banner {
+    width: 95%;
+    margin: 150px auto 0;
+    padding: 1.5rem;
+}
+
+.banner-content {
+    gap: 1rem;
+}
+
+.banner-content h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.banner-content p {
+    font-size: .9rem;
+    max-width: 100%;
+}
+
+.banner-content img {
+    width: 10rem;
+    height: auto;
+}
+
+/* ==-== hero section ==-== */
+
+.hero {
+    width: 95%;
+    margin: 50px auto;
+}
+
+.hero-container > h1 {
+    font-size: 1.5rem;
+}
+
+.hero-container > p {
+    width: 100%;
+   
+}
+
+.hero-body {
+    flex-direction: column-reverse;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+.body-content {
+    gap: 1rem;
+}
+
+.body-content > h1 {
+    font-size: 1.5rem;  
+}
+
+.hero-body img {
+    width: 20rem;
+}
+
+/* ==-== target sectio ==-== */
+.target {
+    width: 95%;
+    margin: 50px auto;
+}
+ .target-card {
+    flex-direction: column;
+    gap: 1rem;
+} 
+.card {
+    width: 100%;
+    max-width: 95%;
+}
+
+/* ==-== footer section ===-== */
+
+.footer {
+    padding: 1rem;
+}
+
+.footer-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;  
+}
+
+}
